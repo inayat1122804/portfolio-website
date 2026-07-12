@@ -106,25 +106,24 @@ function Layout({ children, menuOpen, setMenuOpen }) {
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-
-          {menuOpen && (
-            <div className="absolute left-0 right-0 top-full z-20 mt-3 rounded-2xl border border-white/10 bg-slate-950/95 p-3 shadow-2xl md:hidden">
-              <ul className="flex flex-col gap-2">
-                {navItems.map((item) => (
-                  <li key={item.label}>
-                    <Link
-                      to={item.to}
-                      onClick={() => setMenuOpen(false)}
-                      className="block rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-violet-500/20 hover:text-white"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
         </nav>
+        {menuOpen && (
+          <div className="relative left-0 right-0 top-full z-20 mt-3 rounded-2xl border border-white/10 bg-slate-950/95 p-3 shadow-2xl md:hidden">
+            <ul className="flex flex-col gap-2">
+              {navItems.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    to={item.to}
+                    onClick={() => setMenuOpen(false)}
+                    className="block rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-violet-500/20 hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
       <div>{children}</div>
