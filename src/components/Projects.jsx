@@ -15,6 +15,7 @@ const projects = [
       "AI Expense Tracker is an intelligent expense management application that helps users track spending, categorize expenses automatically, and gain AI-powered financial insights. It simplifies budgeting with real-time analytics, smart recommendations, and easy-to-understand reports.",
     tags: ["Cursor Ai", "AI"],
     image: defaultImage,
+    url: "https://your-ai-expense-tracker.example.com",
   },
   {
     title: "Crypto Coins Dashboard",
@@ -23,6 +24,7 @@ const projects = [
       "Crypto Coins Tracker** is a React application that displays real-time cryptocurrency prices, market data, and interactive 7-day price charts. It helps users track market trends through a clean and responsive interface.",
     tags: ["React", "API", "Dashboard"],
     image: coinsImage,
+    url: "https://your-crypto-coins-dashboard.example.com",
   },
   {
     title: "Chat App",
@@ -31,6 +33,7 @@ const projects = [
       "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members. It provides a simple and secure platform for seamless group conversations.",
     tags: ["UI", "UX", "Performance", "React", "DataBase", "Node"],
     image: chatAppImage,
+    url: "https://chat-app-one-wheat-64.vercel.app/",
   },
   {
     title: "Blog Website",
@@ -39,6 +42,7 @@ const projects = [
       "Blog App is a modern blogging platform where users can create, edit, and manage blog posts with ease. It offers a clean interface for publishing and exploring engaging content.",
     tags: ["Node", "Express", "API", "DataBase"],
     image: blogImage,
+    url: "https://your-blog-website.example.com",
   },
 ];
 
@@ -101,6 +105,18 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+                {project.url && (
+                  <div className="mt-6">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center rounded-full bg-violet-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-violet-700"
+                    >
+                      View live project
+                    </a>
+                  </div>
+                )}
               </div>
             </article>
           ))}

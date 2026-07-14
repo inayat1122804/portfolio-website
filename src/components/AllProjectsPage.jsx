@@ -15,6 +15,7 @@ const projects = [
     description:
       "AI Expense Tracker is an intelligent expense management application that helps users track spending, categorize expenses automatically, and gain AI-powered financial insights.",
     image: project1,
+    url: "https://your-ai-expense-tracker.example.com",
   },
   {
     title: "Crypto Coins Dashboard",
@@ -22,6 +23,7 @@ const projects = [
     description:
       "Crypto Coins Tracker is a React application that displays real-time cryptocurrency prices, market data, and interactive 7-day price charts.",
     image: coinsImage,
+    url: "https://your-crypto-coins-dashboard.example.com",
   },
   {
     title: "Chat App",
@@ -29,6 +31,7 @@ const projects = [
     description:
       "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members.",
     image: chatAppImage,
+    url: "https://chat-app-one-wheat-64.vercel.app/",
   },
   {
     title: "Blog Website",
@@ -36,6 +39,7 @@ const projects = [
     description:
       "Blog App is a modern blogging platform where users can create, edit, and manage blog posts with ease.",
     image: blogImage,
+    url: "https://your-blog-website.example.com",
   },
   {
     title: "Shopping Website",
@@ -43,6 +47,7 @@ const projects = [
     description:
       "A polished shopping experience with featured products, category sections, and a user-friendly interface for browsing and purchasing items.",
     image: shoppingImage,
+    url: "https://your-shopping-website.example.com",
   },
   {
     title: "Router DOM Project",
@@ -50,6 +55,7 @@ const projects = [
     description:
       "A React app demonstrating route-based navigation, dynamic pages, and a clean structure for multi-page web experiences.",
     image: routerDomImage,
+    url: "https://your-router-dom-project.example.com",
   },
   {
     title: "Nodemailer Contact App",
@@ -57,6 +63,7 @@ const projects = [
     description:
       "A contact form application that sends messages through Nodemailer and presents a responsive, polished experience for users.",
     image: nodemailerImage,
+    url: "https://your-nodemailer-contact-app.example.com",
   },
 ];
 
@@ -111,12 +118,20 @@ const AllProjectsPage = () => {
                     <p className="mt-3 text-base leading-7 text-slate-300">
                       {project.description}
                     </p>
-                    <a
-                      href="#"
-                      className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-violet-300 transition hover:text-violet-200"
-                    >
-                      View Project <FaExternalLinkAlt />
-                    </a>
+                    {project.url ? (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-violet-300 transition hover:text-violet-200"
+                      >
+                        View Project <FaExternalLinkAlt />
+                      </a>
+                    ) : (
+                      <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-slate-500">
+                        Live demo coming soon
+                      </span>
+                    )}
                   </div>
                 </article>
               ))}
