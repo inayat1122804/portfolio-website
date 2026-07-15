@@ -5,19 +5,19 @@ const Experience = () => {
   const timeline = [
     {
       title: "Freelance Web Developer",
-      period: "2024 — Present",
+      period: "2026 — Present",
       text: "Building modern interfaces and full-stack products for clients who need speed, clarity, and dependable delivery.",
       tools: ["React", "Node", "Express", "MongoDB"],
     },
     {
       title: "Personal Product Projects",
-      period: "2023 — 2024",
+      period: "2025 — 2026",
       text: "Creating portfolio sites, dashboards, and polished UI systems while improving accessibility and performance.",
       tools: ["JavaScript", "Tailwind", "REST APIs", "GitHub"],
     },
     {
       title: "Skill Development",
-      period: "2022 — 2023",
+      period: "2025 — 2026",
       text: "Strengthening web fundamentals and full-stack workflows through hands-on builds, debugging, and continuous learning.",
       tools: ["HTML", "CSS", "React", "MongoDB"],
     },
