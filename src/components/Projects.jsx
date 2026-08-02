@@ -24,7 +24,7 @@ const projects = [
       "Crypto Coins Tracker** is a React application that displays real-time cryptocurrency prices, market data, and interactive 7-day price charts. It helps users track market trends through a clean and responsive interface.",
     tags: ["React", "API", "Dashboard"],
     image: coinsImage,
-    url: "https://your-crypto-coins-dashboard.example.com",
+    url: "https://crypto-das.vercel.app/",
   },
   {
     title: "Chat App",
