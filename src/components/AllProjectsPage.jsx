@@ -31,7 +31,7 @@ const projects = [
     description:
       "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members.",
     image: chatAppImage,
-    url: "https://chat-app-one-wheat-64.vercel.app/",
+    url: "https://chat-app-beta-one-60.vercel.app/",
   },
   {
     title: "Blog Website",

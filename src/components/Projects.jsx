@@ -9,6 +9,24 @@ import nodemailerImage from "../assets/images/nodemailer.png";
 
 const projects = [
   {
+    title: "Chat App",
+    category: "Full Stack",
+    description:
+    "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members. It provides a simple and secure platform for seamless group conversations.",
+    tags: ["UI", "UX", "Performance", "React", "DataBase", "Node"],
+    image: chatAppImage,
+    url: "https://chat-app-beta-one-60.vercel.app/",
+  },
+  {
+    title: "Crypto Coins Dashboard",
+    category: "Frontend",
+    description:
+    "Crypto Coins Tracker** is a React application that displays real-time cryptocurrency prices, market data, and interactive 7-day price charts. It helps users track market trends through a clean and responsive interface.",
+    tags: ["React", "API", "Dashboard"],
+    image: coinsImage,
+    url: "https://crypto-dash-sand-five.vercel.app/",
+  },
+  {
     title: "AI Expense Tracker",
     category: "UI / Frontend",
     description:
@@ -16,24 +34,6 @@ const projects = [
     tags: ["Cursor Ai", "AI"],
     image: defaultImage,
     url: "https://your-ai-expense-tracker.example.com",
-  },
-  {
-    title: "Crypto Coins Dashboard",
-    category: "Frontend",
-    description:
-      "Crypto Coins Tracker** is a React application that displays real-time cryptocurrency prices, market data, and interactive 7-day price charts. It helps users track market trends through a clean and responsive interface.",
-    tags: ["React", "API", "Dashboard"],
-    image: coinsImage,
-    url: "https://crypto-dash-sand-five.vercel.app/",
-  },
-  {
-    title: "Chat App",
-    category: "Full Stack",
-    description:
-      "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members. It provides a simple and secure platform for seamless group conversations.",
-    tags: ["UI", "UX", "Performance", "React", "DataBase", "Node"],
-    image: chatAppImage,
-    url: "https://chat-app-one-wheat-64.vercel.app/",
   },
   {
     title: "Blog Website",
