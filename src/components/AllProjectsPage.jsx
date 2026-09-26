@@ -10,12 +10,12 @@ import heroBack from "../assets/images/heroBack.png";
 
 const projects = [
   {
-    title: "AI Expense Tracker",
-    category: "UI / Frontend",
+    title: "Chat App",
+    category: "Full Stack",
     description:
-      "AI Expense Tracker is an intelligent expense management application that helps users track spending, categorize expenses automatically, and gain AI-powered financial insights.",
-    image: project1,
-    url: "https://your-ai-expense-tracker.example.com",
+      "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members.",
+    image: chatAppImage,
+    url: "https://chat-app-beta-one-60.vercel.app/",
   },
   {
     title: "Crypto Coins Dashboard",
@@ -26,20 +26,20 @@ const projects = [
     url: "https://crypto-dash-sand-five.vercel.app/",
   },
   {
-    title: "Chat App",
-    category: "Full Stack",
-    description:
-      "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members.",
-    image: chatAppImage,
-    url: "https://chat-app-beta-one-60.vercel.app/",
-  },
-  {
     title: "Blog Website",
     category: "Creative Build",
     description:
       "Blog App is a modern blogging platform where users can create, edit, and manage blog posts with ease.",
     image: blogImage,
-    url: "https://your-blog-website.example.com",
+    url: "https://blog-app-1-f4rl.onrender.com/",
+  },
+  {
+    title: "AI Expense Tracker",
+    category: "UI / Frontend",
+    description:
+      "AI Expense Tracker is an intelligent expense management application that helps users track spending, categorize expenses automatically, and gain AI-powered financial insights.",
+    image: project1,
+    url: "https://your-ai-expense-tracker.example.com",
   },
   {
     title: "Shopping Website",

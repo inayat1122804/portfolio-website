@@ -12,7 +12,7 @@ const projects = [
     title: "Chat App",
     category: "Full Stack",
     description:
-    "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members. It provides a simple and secure platform for seamless group conversations.",
+      "Group Chat App is a real-time chat application where users can register, log in, and join admin-created groups to communicate with other members. It provides a simple and secure platform for seamless group conversations.",
     tags: ["UI", "UX", "Performance", "React", "DataBase", "Node"],
     image: chatAppImage,
     url: "https://chat-app-beta-one-60.vercel.app/",
@@ -21,10 +21,19 @@ const projects = [
     title: "Crypto Coins Dashboard",
     category: "Frontend",
     description:
-    "Crypto Coins Tracker** is a React application that displays real-time cryptocurrency prices, market data, and interactive 7-day price charts. It helps users track market trends through a clean and responsive interface.",
+      "Crypto Coins Tracker** is a React application that displays real-time cryptocurrency prices, market data, and interactive 7-day price charts. It helps users track market trends through a clean and responsive interface.",
     tags: ["React", "API", "Dashboard"],
     image: coinsImage,
     url: "https://crypto-dash-sand-five.vercel.app/",
+  },
+  {
+    title: "Blog Website",
+    category: "Creative Build",
+    description:
+      "Blog App is a modern blogging platform where users can create, edit, and manage blog posts with ease. It offers a clean interface for publishing and exploring engaging content.",
+    tags: ["Node", "Express", "API", "DataBase"],
+    image: blogImage,
+    url: "https://blog-app-1-f4rl.onrender.com/",
   },
   {
     title: "AI Expense Tracker",
@@ -34,15 +43,6 @@ const projects = [
     tags: ["Cursor Ai", "AI"],
     image: defaultImage,
     url: "https://your-ai-expense-tracker.example.com",
-  },
-  {
-    title: "Blog Website",
-    category: "Creative Build",
-    description:
-      "Blog App is a modern blogging platform where users can create, edit, and manage blog posts with ease. It offers a clean interface for publishing and exploring engaging content.",
-    tags: ["Node", "Express", "API", "DataBase"],
-    image: blogImage,
-    url: "https://your-blog-website.example.com",
   },
 ];
 
