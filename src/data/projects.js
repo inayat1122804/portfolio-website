@@ -22,12 +22,21 @@ export const projects = [
     slug: "crypto-coins-dashboard",
     title: "Crypto Coins Dashboard",
     category: "Frontend",
-    description: "A dashboard for viewing cryptocurrency prices and market trends.",
+    description:
+      "An interactive market dashboard with searchable coin listings, sorting controls, and individual coin detail pages.",
     image: coinsImage,
     imageAlt: "Crypto Coins Dashboard project interface",
-    tags: ["React", "API"],
+    tags: ["React", "Market data API"],
     liveUrl: "https://crypto-dash-sand-five.vercel.app/",
     featured: true,
+    caseStudy: {
+      problem:
+        "Finding a specific coin and comparing market data is easier when the information is organized in one searchable view.",
+      solution:
+        "I built a coin dashboard with search by name or symbol, controls for how many results to show, and sorting by market cap, price, or name. Each coin also opens a detail page with additional market information.",
+      result:
+        "The live project brings a searchable, sortable coin list and individual coin details together in one place, including price, market cap, price movement, and supply information.",
+    },
   },
   {
     slug: "blog-website",
@@ -80,11 +89,4 @@ export const projects = [
     tags: ["Node.js"],
     featured: false,
   },
-].map((project) => ({
-  ...project,
-  caseStudy: {
-    problem: "TODO: Add the confirmed problem this project addressed.",
-    solution: "TODO: Describe the work completed for this project.",
-    result: "TODO: Add a verified outcome or remove this section.",
-  },
-}));
+];

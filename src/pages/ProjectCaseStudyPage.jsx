@@ -10,17 +10,19 @@ export default function ProjectCaseStudyPage() {
 
   if (!project) return <NotFoundPage />;
 
-  const details = [
-    { title: "Problem", content: project.caseStudy.problem },
-    { title: "Solution", content: project.caseStudy.solution },
-    {
-      title: "Technology",
-      content: project.tags.length
-        ? project.tags.join(", ")
-        : "TODO: Confirm the technologies used for this project.",
-    },
-    { title: "Result", content: project.caseStudy.result },
-  ];
+  const details = project.caseStudy
+    ? [
+        { title: "Problem", content: project.caseStudy.problem },
+        { title: "Solution", content: project.caseStudy.solution },
+        { title: "Technology", content: project.tags.join(", ") },
+        { title: "Result", content: project.caseStudy.result },
+      ]
+    : [
+        { title: "About this project", content: project.description },
+        ...(project.tags.length
+          ? [{ title: "Technology", content: project.tags.join(", ") }]
+          : []),
+      ];
 
   return (
     <>
