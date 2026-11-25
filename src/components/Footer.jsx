@@ -1,44 +1,37 @@
-import footerPic from "../assets/images/bg-cta.jpg";
+import { FaGithub } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <section id="contact">
-      <div
-        className="relative bg-cover bg-center bg-no-repeat py-24"
-        style={{ backgroundImage: `url(${footerPic})` }}
-      >
-        <div className="absolute inset-0 bg-slate-950/80"></div>
-
-        <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-violet-300">
-            Contact
+    <footer className="site-footer">
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <div>
+          <p className="font-semibold text-copy">INAYAT KHAN</p>
+          <p className="mt-1 text-sm text-muted">
+            Full-stack junior web developer
           </p>
-          <h2 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">
-            Let’s build something polished, modern, and memorable.
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-            If you need a website that feels professional and connects with your
-            audience, I’d love to hear about your project.
-          </p>
-
-          <div className="mt-10 flex flex-col justify-center gap-4 rounded-3xl border border-white/10 bg-white/10 p-6 backdrop-blur-sm sm:flex-row sm:items-center">
-            <a
-              href="mailto:inayat@example.com"
-              className="rounded-full bg-violet-600 px-6 py-3 font-semibold text-white transition hover:bg-violet-500"
-            >
-              Say Hello
-            </a>
-            <a
-              href="#home"
-              className="rounded-full border border-white/20 px-6 py-3 font-semibold text-slate-100 transition hover:border-violet-400 hover:text-violet-200"
-            >
-              Back to Top
-            </a>
-          </div>
         </div>
+        <div className="flex flex-wrap items-center gap-5">
+          <Link to="/contact" className="footer-link">
+            Contact
+          </Link>
+          <a
+            href="https://github.com/inayat1122804"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link inline-flex items-center gap-2"
+            aria-label="Visit Inayat Khan on GitHub (opens in a new tab)"
+          >
+            <FaGithub aria-hidden="true" />
+            GitHub
+            <FiArrowUpRight aria-hidden="true" />
+          </a>
+        </div>
+        <p className="text-sm text-muted">
+          © Inayat Khan
+        </p>
       </div>
-    </section>
+    </footer>
   );
-};
-
-export default Footer;
+}

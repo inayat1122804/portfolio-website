@@ -1,16 +1,53 @@
-# React + Vite
+# Inayat Khan — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React, Vite, Tailwind CSS v4, and React Router portfolio site.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm install
+npm run dev
+```
 
-## React Compiler
+Run the production checks with:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+npm run lint
+npm run build
+```
 
-## Expanding the Oxlint configuration
+## Contact form
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The form submits to the existing contact API. Set `VITE_CONTACT_API_URL` in
+the frontend deployment environment to override its configured endpoint, then
+redeploy the frontend. The API requires its own environment configuration; do
+not put database credentials in frontend variables.
+
+## Deploy to Vercel
+
+1. Import the repository in Vercel and use the repository root as the project
+   root.
+2. Use `npm run build` as the build command and `dist` as the output directory.
+3. If the contact API is deployed separately, add `VITE_CONTACT_API_URL` with
+   that API's `/api/contact` endpoint and redeploy.
+
+`vercel.json` rewrites application routes to the Vite entry point so React
+Router case-study and contact URLs work when opened directly.
+
+## Deploy to Netlify
+
+1. Import the repository in Netlify.
+2. Use `npm run build` as the build command and `dist` as the publish directory.
+3. If the contact API is deployed separately, add `VITE_CONTACT_API_URL` with
+   that API's `/api/contact` endpoint and redeploy.
+
+`public/_redirects` supplies the SPA fallback for React Router routes.
+
+## Portfolio content notes
+
+- Project descriptions and live links are in `src/data/projects.js`.
+- The experience section intentionally shows a TODO until verified details are
+  supplied.
+- The CV control remains disabled until a real CV file is added.
+- Case studies mark missing problem, solution, and result details as TODOs
+  rather than inventing project outcomes.
